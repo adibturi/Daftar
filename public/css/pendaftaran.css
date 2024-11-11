@@ -1,0 +1,177 @@
+
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Animasi untuk Card */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat hover */
+  }
+  .card:hover {
+    transform: scale(1.05); /* Membuat card sedikit membesar saat hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Memberikan bayangan saat hover */
+  }
+
+  /* Animasi untuk judul card */
+  .card-title {
+    transition: color 0.3s ease; /* Animasi warna saat hover */
+  }
+  .card:hover .card-title {
+    color: #007bff; /* Mengubah warna judul saat hover */
+  }
+
+
+   /* Custom Style Footer */
+   .footer {
+    background-color: #1c8635;
+    color: white;
+    padding: 40px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+  }
+
+  /* Animasi muncul saat footer terlihat di layar */
+  .footer-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Style untuk ikon media sosial */
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #ffc107; /* Warna ikon berubah saat hover */
+  }
+
+  /* Responsive grid untuk footer */
+  @media (max-width: 768px) {
+    .footer .col-md-4 {
+      margin-bottom: 30px;
+    }
+  }
+  /* Membuat navbar di atas carousel */
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Pastikan z-index lebih besar dari carousel */
+    background-color: rgba(0, 0, 0, 0.5); /* Background transparan */
+  }
+
+  /* Agar konten carousel tidak menutupi navbar di versi mobile */
+  .carousel-item {
+    height: 800px; /* Full height pada mobile */
+  }
+
+  /* Sesuaikan tinggi carousel jika diperlukan */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 100%; /* Menjaga tinggi gambar sesuai layar di mobile */
+      width: 100%;
+      object-fit: cover; /* Pastikan gambar penuh menyesuaikan ukuran layar */
+    }
+  }
+  /* Menghilangkan cursor mouse bawaan */
+  body, button, a {
+    cursor: none;
+  }
+
+  /* Pointer style */
+  .pointer {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 100%;
+    pointer-events: none; /* Agar pointer tidak mengganggu elemen lain */
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out;
+  }
+
+  /* Animasi pembesaran saat hover */
+  body:hover .pointer {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+  }
+
+
+  body {
+    font-family: 'Lora', serif;/* Untuk body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Poppins', sans-serif; /* Untuk heading */
+font-weight: bold;
+}
+
+p {
+font-family: 'Open Sans', sans-serif; /* Untuk paragraf */
+}
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Gaya untuk navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #002B53;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            color: #008000; /* Warna hijau saat hover */
+        }
+
+        /* Konten halaman */
+        .content {
+            padding: 20px;
+        }
+
+        /* Gaya tambahan */
+        .header .text-over-image {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .btn-primary:hover {
+            background-color: #28a745; /* Tetap hijau saat di-hover */
+            color: white; /* Tetap putih saat di-hover */
+        }

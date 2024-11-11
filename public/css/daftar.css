@@ -1,0 +1,170 @@
+/* Animasi transisi saat hover pada input */
+.form-control {
+    transition: all 0.3s ease;
+  }
+
+  .form-control:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+  }
+
+  /* Tampilan tombol upload file */
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .custom-file-upload:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  /* Animasi fade-in untuk form */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  /* Gaya tombol submit */
+  .btn-submit {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .btn-submit:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+  }
+
+   /* Custom Style Footer */
+   .footer {
+    background-color: #1c8635;
+    color: white;
+    padding: 40px 0;
+
+  }
+
+  /* Style untuk ikon media sosial */
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #ffc107; /* Warna ikon berubah saat hover */
+  }
+
+  /* Responsive grid untuk footer */
+  @media (max-width: 768px) {
+    .footer .col-md-4 {
+      margin-bottom: 30px;
+    }
+  }
+
+   /* Membuat navbar di atas carousel */
+   .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Pastikan z-index lebih besar dari carousel */
+    background-color: rgba(0, 0, 0, 0.5); /* Background transparan */
+  }
+
+  /* Agar konten carousel tidak menutupi navbar di versi mobile */
+  .carousel-item {
+    height: 800px; /* Full height pada mobile */
+  }
+
+  /* Sesuaikan tinggi carousel jika diperlukan */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 100%; /* Menjaga tinggi gambar sesuai layar di mobile */
+      width: 100%;
+      object-fit: cover; /* Pastikan gambar penuh menyesuaikan ukuran layar */
+    }
+  }
+
+
+  body {
+    font-family: 'Lora', serif;/* Untuk body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Poppins', sans-serif; /* Untuk heading */
+font-weight: bold;
+}
+
+p {
+font-family: 'Open Sans', sans-serif; /* Untuk paragraf */
+}
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Gaya untuk navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #002B53;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            color: #008000; /* Warna hijau saat hover */
+        }
+
+        /* Konten halaman */
+        .content {
+            padding: 20px;
+        }
+
+        /* Gaya tambahan */
+        .header .text-over-image {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .btn-primary:hover {
+            background-color: #28a745; /* Tetap hijau saat di-hover */
+            color: white; /* Tetap putih saat di-hover */
+        }
+
