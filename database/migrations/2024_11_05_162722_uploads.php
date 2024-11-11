@@ -22,3 +22,4 @@ class CreateUploadsTable extends Migration
     {
         Schema::dropIfExists('uploads');
     }
+}
