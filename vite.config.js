@@ -1,12 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
-export default {
-  build: {
-    outDir: 'dist'
-  }
-}
-
 export default defineConfig({
     plugins: [
         laravel({
@@ -14,4 +8,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        outDir: 'dist'
+    }
 });
